@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DEEB - Premium Clothing For Every Style. Wear Confidence. Wear Deeb. Luxury fashion brand offering modern, elegant clothing.">
+  <meta name="keywords" content="DEEB, luxury clothing, fashion, premium apparel, streetwear, formal wear">
+  <meta name="author" content="DEEB">
+  <meta name="theme-color" content="#E10600">
+  <meta property="og:title" content="DEEB | Wear Confidence. Wear Deeb.">
+  <meta property="og:description" content="Premium Clothing For Every Style. Discover luxury fashion at DEEB.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-bg.svg">
+  <title>DEEB | Wear Confidence. Wear Deeb.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>D</text></svg>">
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-logo">DEEB</div>
+    <div class="preloader-bar"></div>
+  </div>
+  <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="header" id="header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="DEEB Home">DEEB</a>
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/shop.html" class="nav-link">Shop</a>
+        <a href="pages/collections.html" class="nav-link">Collections</a>
+        <a href="pages/lookbook.html" class="nav-link">Lookbook</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://wa.me/XXXXXXXXXX" class="btn-whatsapp-header magnetic" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>Order Now</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navMobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="navMobile" role="navigation" aria-label="Mobile Navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="pages/shop.html" class="nav-link">Shop</a>
+    <a href="pages/collections.html" class="nav-link">Collections</a>
+    <a href="pages/lookbook.html" class="nav-link">Lookbook</a>
+    <a href="pages/about.html" class="nav-link">About</a>
+    <a href="pages/contact.html" class="nav-link">Contact</a>
+    <a href="https://wa.me/XXXXXXXXXX" class="btn-whatsapp-header" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Order on WhatsApp
+    </a>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-bg">
+        <img src="assets/images/hero-bg.svg" alt="" loading="eager" aria-hidden="true">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="hero-label">Premium Fashion</span>
+        <h1 class="hero-title">DEEB</h1>
+        <p class="hero-subtitle">Wear Confidence. Wear Deeb.</p>
+        <p style="font-size:1.125rem;color:rgba(255,255,255,0.7);margin-bottom:2.5rem;letter-spacing:0.05em;">Premium Clothing For Every Style.</p>
+        <div class="hero-buttons">
+          <a href="#featured" class="btn btn-primary btn-ripple magnetic">Shop Now</a>
+          <a href="https://wa.me/XXXXXXXXXX" class="btn btn-outline btn-ripple magnetic" target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="mouse"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-label="Brand Marquee">
+      <div class="marquee-track">
+        <div class="marquee-item">Premium Quality</div>
+        <div class="marquee-item">Modern Design</div>
+        <div class="marquee-item">Fast Shipping</div>
+        <div class="marquee-item">Affordable Luxury</div>
+        <div class="marquee-item">Excellent Service</div>
+        <div class="marquee-item">Premium Quality</div>
+        <div class="marquee-item">Modern Design</div>
+        <div class="marquee-item">Fast Shipping</div>
+        <div class="marquee-item">Affordable Luxury</div>
+        <div class="marquee-item">Excellent Service</div>
+      </div>
+    </section>
+
+    <section class="section section-gray" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Our Collection</span>
+          <h2 class="section-title reveal reveal-delay-1" id="featured-title">Featured Products</h2>
+          <p class="section-subtitle reveal reveal-delay-2">Discover our handpicked selection of premium pieces designed for the modern individual.</p>
+        </div>
+        <div class="product-grid">
+
+          <article class="product-card reveal reveal-delay-1">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-tshirt.svg" alt="Oversized T-Shirt" loading="lazy">
+              <span class="product-badge">Best Seller</span>
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Tops</span>
+              <h3 class="product-name">Oversized T-Shirt</h3>
+              <p class="product-description">Premium cotton oversized fit with modern silhouette.</p>
+              <div class="product-price">$49.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Oversized T-Shirt', '$49.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-hoodie.svg" alt="Luxury Hoodie" loading="lazy">
+              <span class="product-badge">New</span>
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Outerwear</span>
+              <h3 class="product-name">Luxury Hoodie</h3>
+              <p class="product-description">Heavyweight fleece with premium embroidered details.</p>
+              <div class="product-price">$89.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Luxury Hoodie', '$89.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-3">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-cargo.svg" alt="Cargo Pants" loading="lazy">
+              
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Bottoms</span>
+              <h3 class="product-name">Cargo Pants</h3>
+              <p class="product-description">Utility-inspired design with multiple pockets and tapered fit.</p>
+              <div class="product-price">$69.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Cargo Pants', '$69.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-4">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-jacket.svg" alt="Black Jacket" loading="lazy">
+              <span class="product-badge">Hot</span>
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Outerwear</span>
+              <h3 class="product-name">Black Jacket</h3>
+              <p class="product-description">Sleek bomber jacket with water-resistant finish.</p>
+              <div class="product-price">$119.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Black Jacket', '$119.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-jeans.svg" alt="Classic Jeans" loading="lazy">
+              
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Bottoms</span>
+              <h3 class="product-name">Classic Jeans</h3>
+              <p class="product-description">Timeless straight-leg denim with premium wash.</p>
+              <div class="product-price">$79.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Classic Jeans', '$79.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-sneakers.svg" alt="Premium Sneakers" loading="lazy">
+              <span class="product-badge">Limited</span>
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Footwear</span>
+              <h3 class="product-name">Premium Sneakers</h3>
+              <p class="product-description">Handcrafted leather upper with cushioned sole.</p>
+              <div class="product-price">$129.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Premium Sneakers', '$129.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-3">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-cap.svg" alt="Designer Cap" loading="lazy">
+              
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Accessories</span>
+              <h3 class="product-name">Designer Cap</h3>
+              <p class="product-description">Structured crown with embroidered logo detail.</p>
+              <div class="product-price">$35.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Designer Cap', '$35.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-4">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-shirt.svg" alt="Classic Shirt" loading="lazy">
+              <span class="product-badge">New</span>
+              <button class="product-wishlist" aria-label="Add to wishlist">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Tops</span>
+              <h3 class="product-name">Classic Shirt</h3>
+              <p class="product-description">Crisp cotton button-up with tailored fit.</p>
+              <div class="product-price">$59.00</div>
+              <div class="product-sizes">
+                <span class="size-option">S</span>
+                <span class="size-option active">M</span>
+                <span class="size-option">L</span>
+                <span class="size-option">XL</span>
+              </div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Classic Shirt', '$59.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="new-arrivals" aria-labelledby="arrivals-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Just Dropped</span>
+          <h2 class="section-title reveal reveal-delay-1" id="arrivals-title">New Arrivals</h2>
+          <p class="section-subtitle reveal reveal-delay-2">The latest additions to our premium collection.</p>
+        </div>
+        <div class="arrivals-grid">
+          <article class="arrival-card reveal reveal-delay-1">
+            <img src="assets/images/arrival-1.svg" alt="Urban Explorer Collection" loading="lazy">
+            <div class="arrival-overlay">
+              <h3 class="arrival-title">Urban Explorer</h3>
+              <span class="arrival-price">From $45.00</span>
+            </div>
+          </article>
+          <article class="arrival-card reveal reveal-delay-2">
+            <img src="assets/images/arrival-2.svg" alt="Night Collection" loading="lazy">
+            <div class="arrival-overlay">
+              <h3 class="arrival-title">Night Collection</h3>
+              <span class="arrival-price">From $65.00</span>
+            </div>
+          </article>
+          <article class="arrival-card reveal reveal-delay-3">
+            <img src="assets/images/arrival-3.svg" alt="Essential Line" loading="lazy">
+            <div class="arrival-overlay">
+              <h3 class="arrival-title">Essential Line</h3>
+              <span class="arrival-price">From $35.00</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gray" id="best-sellers" aria-labelledby="bestsellers-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Top Picks</span>
+          <h2 class="section-title reveal reveal-delay-1" id="bestsellers-title">Best Sellers</h2>
+          <p class="section-subtitle reveal reveal-delay-2">Our most loved pieces by the DEEB community.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal reveal-delay-1">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-jacket.svg" alt="Black Jacket" loading="lazy">
+              <span class="product-badge">#1</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Outerwear</span>
+              <h3 class="product-name">Black Jacket</h3>
+              <p class="product-description">Sleek bomber jacket with water-resistant finish.</p>
+              <div class="product-price">$119.00</div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Black Jacket', '$119.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+          <article class="product-card reveal reveal-delay-2">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-hoodie.svg" alt="Luxury Hoodie" loading="lazy">
+              <span class="product-badge">#2</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Outerwear</span>
+              <h3 class="product-name">Luxury Hoodie</h3>
+              <p class="product-description">Heavyweight fleece with premium embroidered details.</p>
+              <div class="product-price">$89.00</div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Luxury Hoodie', '$89.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+          <article class="product-card reveal reveal-delay-3">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-sneakers.svg" alt="Premium Sneakers" loading="lazy">
+              <span class="product-badge">#3</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Footwear</span>
+              <h3 class="product-name">Premium Sneakers</h3>
+              <p class="product-description">Handcrafted leather upper with cushioned sole.</p>
+              <div class="product-price">$129.00</div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Premium Sneakers', '$129.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+          <article class="product-card reveal reveal-delay-4">
+            <div class="product-image-wrapper">
+              <img src="assets/images/product-tshirt.svg" alt="Oversized T-Shirt" loading="lazy">
+              <span class="product-badge">#4</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Tops</span>
+              <h3 class="product-name">Oversized T-Shirt</h3>
+              <p class="product-description">Premium cotton oversized fit with modern silhouette.</p>
+              <div class="product-price">$49.00</div>
+              <button class="btn-whatsapp btn-ripple" onclick="orderOnWhatsApp('Oversized T-Shirt', '$49.00')">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Order via WhatsApp
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="limited-banner" id="limited" aria-labelledby="limited-title">
+      <div class="limited-banner-bg">
+        <img src="assets/images/limited-bg.svg" alt="" loading="lazy" aria-hidden="true">
+      </div>
+      <div class="limited-banner-content">
+        <span class="limited-label reveal">Limited Time Only</span>
+        <h2 class="limited-title reveal reveal-delay-1" id="limited-title">Limited Edition Drop</h2>
+        <p class="limited-desc reveal reveal-delay-2">Exclusive pieces crafted in limited quantities. Once they are gone, they are gone forever.</p>
+        <div class="countdown reveal reveal-delay-3" id="countdown" aria-label="Countdown timer">
+          <div class="countdown-item"><div class="countdown-value" id="days">00</div><div class="countdown-label">Days</div></div>
+          <div class="countdown-item"><div class="countdown-value" id="hours">00</div><div class="countdown-label">Hours</div></div>
+          <div class="countdown-item"><div class="countdown-value" id="minutes">00</div><div class="countdown-label">Minutes</div></div>
+          <div class="countdown-item"><div class="countdown-value" id="seconds">00</div><div class="countdown-label">Seconds</div></div>
+        </div>
+        <a href="pages/shop.html" class="btn btn-primary btn-ripple magnetic reveal reveal-delay-4">Shop Limited Edition</a>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal reveal-left">
+            <img src="assets/images/about-image.svg" alt="DEEB Brand" loading="lazy">
+          </div>
+          <div class="about-content reveal reveal-right">
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title" id="about-title">About DEEB</h2>
+            <p>DEEB was born from a simple belief: clothing should empower you. Every piece in our collection is designed to make you feel confident, comfortable, and undeniably stylish.</p>
+            <p>We combine premium materials with modern aesthetics to create fashion that transcends trends. Our commitment to quality ensures that every stitch, every fabric, and every detail meets the highest standards.</p>
+            <p>Fashion is not just about what you wear. It is about how you feel. At DEEB, we craft experiences, not just garments. Welcome to a new era of premium clothing.</p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-value" data-count="15000">0</div>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-count="500">0</div>
+                <div class="stat-label">Products</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-count="99">0</div>
+                <div class="stat-label">% Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gray" id="why-deeb" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Why Us</span>
+          <h2 class="section-title reveal reveal-delay-1" id="why-title">Why Choose DEEB</h2>
+          <p class="section-subtitle reveal reveal-delay-2">We go above and beyond to deliver an exceptional experience with every order.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <h3 class="feature-title">Premium Quality</h3>
+            <p class="feature-desc">Only the finest fabrics and materials make it into our collection. We never compromise on quality.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <h3 class="feature-title">Fast Shipping</h3>
+            <p class="feature-desc">Express delivery to your doorstep. Track your order in real-time from dispatch to delivery.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg>
+            </div>
+            <h3 class="feature-title">Affordable Prices</h3>
+            <p class="feature-desc">Luxury fashion should not break the bank. Premium quality at prices that make sense.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <h3 class="feature-title">Modern Designs</h3>
+            <p class="feature-desc">Contemporary styles that keep you ahead of the curve. Designed for the fashion-forward individual.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+            </div>
+            <h3 class="feature-title">Easy Ordering</h3>
+            <p class="feature-desc">Order seamlessly via WhatsApp. Quick, simple, and personalized service at your fingertips.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+            </div>
+            <h3 class="feature-title">Excellent Service</h3>
+            <p class="feature-desc">Our dedicated team is here to help. We respond quickly and solve problems efficiently.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Testimonials</span>
+          <h2 class="section-title reveal reveal-delay-1" id="reviews-title">What Our Customers Say</h2>
+          <p class="section-subtitle reveal reveal-delay-2">Real feedback from real people who chose DEEB.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">The quality of DEEB clothing is unmatched. I have been wearing my hoodie for months and it still looks brand new. Absolutely worth every penny.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AK</div>
+              <div class="testimonial-info">
+                <h4>Ahmed Khalid</h4>
+                <span>Dubai, UAE</span>
+                <div class="testimonial-rating">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Ordering through WhatsApp was so easy. The team helped me pick the right size and my order arrived the next day. Incredible service.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SM</div>
+              <div class="testimonial-info">
+                <h4>Sara Mohammed</h4>
+                <span>Riyadh, KSA</span>
+                <div class="testimonial-rating">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal reveal-delay-3">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Finally, a brand that understands modern fashion. The designs are clean, the fit is perfect, and the prices are fair. DEEB is my go-to brand now.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">YO</div>
+              <div class="testimonial-info">
+                <h4>Youssef Omar</h4>
+                <span>Cairo, Egypt</span>
+                <div class="testimonial-rating">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gray" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-label reveal">Support</span>
+          <h2 class="section-title reveal reveal-delay-1" id="faq-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle reveal reveal-delay-2">Everything you need to know about ordering from DEEB.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-question" aria-expanded="false">
+              How do I place an order?
+              <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Ordering is simple. Browse our collection, click the "Order via WhatsApp" button on any product, and send us your details including product name, size, and delivery address. We will confirm your order within minutes.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-2">
+            <button class="faq-question" aria-expanded="false">
+              What is the shipping time?
+              <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>We offer express shipping with delivery within 2-5 business days depending on your location. Local deliveries are often completed within 24-48 hours. You will receive a tracking number once your order ships.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-3">
+            <button class="faq-question" aria-expanded="false">
+              What is your return policy?
+              <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>We accept returns within 14 days of delivery. Items must be unworn, unwashed, and in original packaging. Contact us via WhatsApp to initiate a return. Refunds are processed within 5-7 business days.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-question" aria-expanded="false">
+              How do I find my correct size?
+              <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Each product page includes a detailed size guide. Our sizes generally run true to size. If you are between sizes, we recommend sizing up for a relaxed fit or down for a more fitted look. Contact us for personalized sizing advice.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal reveal-delay-2">
+            <button class="faq-question" aria-expanded="false">
+              Do you offer cash on delivery?
+              <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we offer cash on delivery for select locations. You can also pay via bank transfer or mobile payment. All payment details will be shared when you place your order through WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="DEEB Home">DEEB</a>
+          <p>Premium clothing for every style. Wear confidence, wear DEEB. Crafted with passion and precision for the modern individual.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" onclick="event.preventDefault(); alert('Facebook link coming soon');"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" aria-label="Instagram" onclick="event.preventDefault(); alert('Instagram link coming soon');"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/shop.html">Shop</a></li>
+            <li><a href="pages/collections.html">Collections</a></li>
+            <li><a href="pages/lookbook.html">Lookbook</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="pages/contact.html">Help Center</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg> XXXXXXXXXX</p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> deeb@example.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; DEEB. All rights reserved.</p>
+        <p>Designed with precision and passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
